@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile card</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f4f4;
+        }
+        .profile-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 370px;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 24px;
+            box-shadow: 0 5px 10px rgba(0, 0,0, 0.5);
+            padding: 25px;
+            position: relative;
+        }
+        .profile-card::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 36%;
+            width: 100%;
+            border-radius: 24px 24px 0 0;
+            background-color: #4070f4;
+        }
+        .image{
+            position: relative;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-color: #4070f4;
+            padding: 3px;
+            margin-bottom: 10px;
+        }
+        .image .profile-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #fff;
+        }
+        .text-data{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text-data .name{
+            font-size: 22px;
+            font-weight: 500;
+        }
+        .text-data .job{
+            font-size: 15px;
+            font-weight: 400;
+        }
+        .media-buttons{
+            display: flex;
+            align-items: center;
+        }
+        .media-buttons .link{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            color: #fff;
+            text-decoration: none;
+            height: 24px;
+            width: 24px;
+            background-color: #4070f4;
+            margin: 0 8px;
+            border-radius: 50%;
+        }
+        .buttons{
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+        .buttons .button{
+            background-color: #4070f4;
+            color: #fff;
+            margin: 0 25px;
+            padding: 8px 24px;
+            border-radius: 24px;
+            border: none;
+            font-size: 14px;
+            font-weight: 400;
+            cursor: pointer;
+        }
+        .button:hover{
+            background-color: #0e4bf1;
+        }
+        .analytics{
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+        }
+        .analytics .data{
+            display: flex;
+            align-items: center;
+            color:#333;
+            padding: 0 20px;
+            border-right: 2px solid #e7e7e7;
+        }
+        .data i{
+            font-size: 18px;
+            margin-right: 6px;
+        }
+        .data:last-child{
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <div class="image">
+            <img src="ANSHPOKAR2.png" alt="" class="profile-img">
+        </div>
+
+        <div class="text-data">
+            <span class="name">Ansh Pokar</span>
+            <span class="job">Web Developer</span>
+        </div>
+
+        <div class="media-buttons">
+            <a href="#" style="background: #4267b2;" class="link">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" style="background: #1da1f2;" class="link">
+                <i class='bx bxl-twitter' ></i>
+            </a>
+            <a href="#" style="background:#e1306c ;" class="link">
+                <i class='bx bxl-instagram' ></i>
+            </a>
+            <a href="#" style="background:#ff0000 ;" class="link">
+                <i class='bx bxl-youtube' ></i>
+            </a>
+        </div>
+
+        <div class="buttons">
+            <button class="button">Subscribe</button>
+            <button class="button">Message</button>
+        </div>
+
+        <div class="analytics">
+            <div class="data">
+                <i class='bx bx-heart'></i>
+                <span class="number">60k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-message-rounded'></i>
+                <span class="number">20k</span>
+            </div>
+            <div class="data">
+                <i class='bx bx-share'></i>
+                <span class="number">12k</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

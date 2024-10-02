@@ -1,0 +1,681 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),
+            rgba(0, 0, 0, 0.5)), url(images/car1.jpg);
+    min-height: 70vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+
+}
+.know-more{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(62, 59, 59, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    height: 1000px;
+    margin-top: -500px;
+}
+.intro {
+    /* height: 1000px; */
+    /* margin-top: -500px; */
+    /* background-color: aqua; */
+    /* background-image: linear-gradient(to bottom, rgba(62, 59, 59, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)); */
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.intro img {
+    /* background-color: beige; */
+    display: flex;
+    height: 500px;
+    width: 500px;
+    margin-top: 20px;
+    /* flex: auto; */
+    /* background-color: aliceblue; */
+    position: relative;
+    z-index: 0;
+    filter: drop-shadow(10px 10px 20px rgb(185, 184, 180));
+}
+
+.intro h1 {
+    /* background-color: aqua; */
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 50px;
+    margin-top: 50px;
+    /* margin-left: 100px; */
+    display: flex;
+    /* background-color: aqua; */
+    position: absolute;
+    z-index: 1;
+    filter: drop-shadow(10px 10px 20px rgb(185, 184, 180))
+}
+.intro .explore {
+    position: absolute;
+    z-index: 2;
+    margin-top: 200px;
+    
+}
+.explore button{
+    padding: 0.5rem 2rem;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    backface-visibility: hidden;
+    border: solid transparent;
+    border-radius: 3rem;
+    transition: background-color 0.3s ease-in-out;
+    filter: drop-shadow(5px 2px 20px rgb(185,184,180));
+}
+.explore button:hover{
+    background-color: #60605e;
+}
+.cars {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* opacity: 0; */
+    /* background-color: aliceblue; */
+    /* width: 500px; */
+    /* height: 500px; */
+    /* position: absolute; */
+}
+
+.vintage {
+    /* background-color: aliceblue; */
+    /* width: 500px; */
+    position: relative;
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.heading{
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 10px;
+    margin-left: 80px;
+    filter: drop-shadow(5px 5px 10px rgb(225, 215, 174));
+}
+
+.mercedes{
+    height: 300px;
+    width: 250px;
+    color: aliceblue;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 7;
+    transition: transform 1s,filter 1s;
+}
+.mercedes img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity:0;
+    transition: transform 1s,opacity 1s;
+}
+.mercedes p{
+    text-align: center;
+}
+.mercedes:hover{
+    transform: translatex(300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.mercedes:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity:1;
+}
+
+
+.Rolls-Royce{
+    color: aliceblue;
+    margin-top: 50px;
+    height: 350px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 8;
+    transition: transform 1s,filter 1s;
+}
+.Rolls-Royce img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s,opacity 1s;
+}
+.Rolls-Royce p{
+    text-align: center;
+}
+.Rolls-Royce:hover{
+    transform: translatex(300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.Rolls-Royce:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+.bmw{
+    color: aliceblue;
+    margin-top: 100px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 9;
+    transition: transform 1s,filter 1s;
+}
+.bmw img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s,opacity 1s;
+}
+.bmw p{
+    text-align: center;
+}
+.bmw:hover{
+    transform: translatex(300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.bmw:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+.aston-martin{
+    color: aliceblue;
+    margin-top: 150px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 10;
+    transition: transform 1s,filter 1s;
+}
+.aston-martin img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: filter 1s ease-in-out,opacity 1s;
+}
+.aston-martin p{
+    text-align: center;
+}
+.aston-martin:hover{
+    transform: translatex(300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.aston-martin:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+
+.Ferrari-250-GTO{
+    color: aliceblue;
+    margin-top: 200px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 11;
+    transition: transform 1s,filter 1s;
+}
+.Ferrari-250-GTO img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: filter 1s,opacity 1s;
+}
+.Ferrari-250-GTO p{
+    text-align: center;
+}
+.Ferrari-250-GTO:hover{
+    /* transform: translatex(300px); */
+    z-index: 13;
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.Ferrari-250-GTO:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+.blank1{
+    color: aliceblue;
+    margin-top: 250px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    border-color: black;
+    z-index: 12;
+}
+
+.maybach{
+    color: aliceblue;
+    /* margin-top: 200px; */
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 1;
+    transition: transform 1s,filter 0.5s;
+    cursor: pointer;
+}
+.maybach img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity:0;
+    transition: filter 0.5s,opacity 1s;
+}
+.maybach p{
+    text-align: center;
+}
+.maybach:hover{
+    /* transform: translatex(300px); */
+    z-index: 4;
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.maybach:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+.Rolls-Royce-II{
+    color: aliceblue;
+    margin-top: 50px;
+    height: 350px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 1;
+    transition: transform 1s,filter 1s;
+}
+.Rolls-Royce-II img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s,opacity 1s;
+}
+.Rolls-Royce-II p{
+    text-align: center;
+}
+.Rolls-Royce-II:hover{
+    /* transform: translatex(300px); */
+    z-index: 5;
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.Rolls-Royce-II:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+.BMW-X7{
+    color: aliceblue;
+    margin-top: 100px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+    transition: transform 1s,filter 1s;
+}
+.BMW-X7 img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s,opacity 1s,z-index 1s;
+}
+.BMW-X7 p{
+    text-align: center;
+}
+.BMW-X7:hover{
+    /* transform: translatex(300px); */
+    z-index: 6;
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.BMW-X7:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+.aston-martin-707{
+    color: aliceblue;
+    margin-top: 150px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+    transition: transform 1s,filter 1s;
+}
+.aston-martin-707 img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: filter 1s ease-in-out,opacity 1s;
+}
+.aston-martin-707 p{
+    text-align: center;
+}
+.aston-martin-707:hover{
+    /* transform: translatex(300px); */
+    z-index: 6;
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.aston-martin-707:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+.Ferrari-SF90{
+    color: aliceblue;
+    margin-top: 200px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 2;
+    transition: transform 1s,filter 1s;
+}
+.Ferrari-SF90 img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: filter 1s,opacity 1s;
+}
+.Ferrari-SF90 p{
+    text-align: center;
+}
+.Ferrari-SF90:hover{
+    /* transform: translatex(300px); */
+    z-index: 4;
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.Ferrari-SF90:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+.blank2{
+    color: aliceblue;
+    margin-top: 250px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    border-color: black;
+    z-index: 3;
+}
+
+.Vision-AVTR{
+    height: 300px;
+    width: 250px;
+    color: aliceblue;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 7;
+    transition: transform 1s,filter 1s;
+}
+.Vision-AVTR img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity:0;
+    transition: transform 1s,opacity 1s;
+}
+.Vision-AVTR p{
+    text-align: center;
+}
+.Vision-AVTR:hover{
+    transform: translatex(-300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.Vision-AVTR:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity:1;
+}
+
+.Rolls-Royce-103ex{
+    color: aliceblue;
+    margin-top: 50px;
+    height: 350px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 8;
+    transition: transform 1s,filter 1s;
+}
+.Rolls-Royce-103ex img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s,opacity 1s;
+}
+.Rolls-Royce-103ex p{
+    text-align: center;
+}
+.Rolls-Royce-103ex:hover{
+    transform: translatex(-300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.Rolls-Royce-103ex:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+.vision-100{
+    color: aliceblue;
+    margin-top: 100px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 9;
+    transition: transform 1s,filter 1s;
+}
+.vision-100 img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: transform 1s,opacity 1s;
+}
+.vision-100 p{
+    text-align: center;
+}
+.vision-100:hover{
+    transform: translatex(-300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.vision-100:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+.aston-martin-valkyrie{
+    color: aliceblue;
+    margin-top: 150px;
+    height: 325px;
+    width: 250px;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+    border: 3px;
+    border-style: solid;
+    position: absolute;
+    z-index: 10;
+    transition: transform 1s,filter 1s;
+}
+.aston-martin-valkyrie img{
+    width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    opacity: 0;
+    transition: filter 1s ease-in-out,opacity 1s;
+}
+.aston-martin-valkyrie p{
+    text-align: center;
+}
+.aston-martin-valkyrie:hover{
+    transform: translatex(-300px);
+    filter: drop-shadow(2px 2px 10px rgb(225, 215, 174));
+}
+.aston-martin-valkyrie:hover img{
+    filter: drop-shadow(1px 1px 10px rgb(185,184,180));
+    opacity: 1;
+}
+
+
+
+.section-3{
+height: 200px;
+background-color: black;
+}
